@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./input.css -o ./dist/style.css && cp index.html dist/index.html",
+    "build": "tailwindcss -i ./input.css -o ./dist/style.css && npx cpx index.html dist",
     "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
   },
   "keywords": [],
@@ -11,6 +11,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "cpx": "^1.5.0"
   }
 }
+
